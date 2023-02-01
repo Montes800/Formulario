@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="style.css" media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de Lideres</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobremoe">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <div class="campo"> 
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="campo">
+            <label>De qual lado da aplicação você desenvolvel</label>
+            <label></label>
+                <input type="radio" name="devweb" value="frontend" checked>Jovens
+            </label>
+            <label></label>
+                <input type="radio" name="devweb" value="backend">Adolecentes
+            </label>
+            <label></label>
+                <input type="radio" name="devweb" value="Fullstack">Pre-adolecente
+            </label>
+         </div>
+         <div  class="campo">
+            <label>Discipulador</label>
+            <select id="senioridade">
+                <option selected disabled value="">Escolha...</option>
+                <option>Jonathan</option>
+                <option>Wignes</option>
+                <option>Higor</option>
+                <option>Richard</option>
+                <option>Derik</option>
+                <option>Felipe</option>
+                <option>Paulo</option>
+                <option>Everton</option>
+                <option>Ian</option>
+            </select>
+         </div>
+         <fieldset class="grupo">
+            <div id="check">
+                <label>Cursos da Igreja que você ja fez:</label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">Ceifeiros</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia1" value="CSS">
+                <label for="tecnologia2">Maturidade</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia1" value="Javascript">
+                <label for="tecnologia3">C.T.L</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia1" value="PHP">
+                <label for="tecnologia4">Pastoral</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia1" value="C#">
+                <label for="tecnologia5">Noivos</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia1" value="Python">
+                <label for="tecnologia6">T.A.L</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia1" value="Java">
+                <label for="tecnologia7">Criação de filhos</label>
+            </div>
+         </fieldset>
+         <div  class="campo">
+            <br>
+            <label>Por favor, comente os pontos que você acha que seria relevante comentar no dispulado geral</label>
+            <textarea row="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
+         </div>
+         <button class="botao" type="submit" onsubmit="">Concluir</button>
+    </form>
+</body>
+</html>
